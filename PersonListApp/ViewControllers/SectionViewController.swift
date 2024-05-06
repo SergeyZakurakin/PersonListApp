@@ -26,23 +26,42 @@ class SectionViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        persons.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+         2
     }
 
-    /*
+    // title для ячеек
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        persons[section].fullname
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let person = persons[indexPath.section]
+        var content = cell.defaultContentConfiguration()
+        
+        
+        // отображать в каждой отдельной ячейке
+        switch indexPath.row {
+        case 0:
+            content.text = person.phoneNumber
+            content.image = UIImage(systemName: "phone")
+        default:
+            content.text = person.email
+            content.image = UIImage(systemName: "tray")
+        }
+        
 
-        // Configure the cell...
-
+        cell.contentConfiguration = content
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
