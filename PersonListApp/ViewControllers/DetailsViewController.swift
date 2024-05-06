@@ -20,7 +20,7 @@ final class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         nameLabel.text = person.fullname
-        phoneLabel.text = String(person.phone)
+        phoneLabel.text = String(person.phoneNumber)
         emailLabel.text = person.email
         
         
