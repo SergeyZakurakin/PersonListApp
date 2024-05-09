@@ -25,7 +25,7 @@ class TabBarViewController: UITabBarController {
         guard let sectionVC = viewControllers?.last as? SectionViewController else {return}
         
         
-        // с помощу перебора вызвать нужный viewController из TabBar (если их много)
+        // с помощу перебора вызвать нужный viewController из tabBar
 //        viewControllers?.forEach{ viewController in
 //            if let contactListVC = viewController as? ContactListViewController {
 //                contactListVC.persons = persons

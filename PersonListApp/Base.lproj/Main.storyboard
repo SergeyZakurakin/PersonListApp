@@ -144,7 +144,7 @@
                             <outlet property="delegate" destination="8bU-bp-fae" id="4By-TO-Mya"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="uBL-Q5-xnD"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="tray" catalog="system" id="uBL-Q5-xnD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ad3-Df-fqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,6 +153,7 @@
     </scenes>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

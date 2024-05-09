@@ -16,6 +16,7 @@ final class ContactListViewController: UITableViewController {
         super.viewDidLoad()
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
